@@ -68,11 +68,11 @@ while True:
             ### PUBLISHING DATA ON MQTT SERVER ###
             if (time.time() - TIME_actual_publish) > TIME_BETWEEN_PUBLISH:
              
-                mqtt.publish_info(client = client, topic = b'celsorious/f/map/csv', data = location[2])
-                mqtt.publish_info(client = client, topic = b'celsorious/f/satelites', data = n_satellites)
-                mqtt.publish_info(client = client, topic = b'celsorious/f/speed', data = speed)
+                mqtt.publish_info(client = client, topic = b'FEED/csv', data = location[2])
+                mqtt.publish_info(client = client, topic = b'FEED', data = n_satellites)
+                mqtt.publish_info(client = client, topic = b'FEED', data = speed)
 
-                mqtt.publish_info(client = client, topic = b'celsorious/f/altitude', data = altitude)
+                mqtt.publish_info(client = client, topic = b'FEED', data = altitude)
             
                 TIME_actual_publish  = time.time()
         else:
