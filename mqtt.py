@@ -11,9 +11,9 @@ from random import randint
 
 ### MQTT SERVER VARIABLES ###
 
-IO_SERVER = b'io.adafruit.com'
-IO_USERNAME = b'celsorious'
-IO_KEY = b'aio_kZiY32wmdAv5YnLK5ptpU0D4kgd8'
+IO_SERVER = b'NAMESERVER'
+IO_USERNAME = b'NAMEUSERNAME'
+IO_KEY = b'ADAFRUITIOKEY'
 CLIENT_ID = b'ESP32_GPS'
 PORT = 1883 # ENCRYPTED 8883
 
